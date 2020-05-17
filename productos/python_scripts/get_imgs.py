@@ -3,7 +3,7 @@ import requests
 import pymysql
 import pymysql.cursors
 
-connection = pymysql.connect(user='mateo', password='123', host='localhost', database='item_db') #CHANGE THIS TO YOUR CREDS
+connection = pymysql.connect(user='***', password='***', host='localhost', database='***') #CHANGE THIS TO YOUR CREDS
 mycursor = connection.cursor()  # connect to database
 
 csvdata = open('productos/data/output.csv')
