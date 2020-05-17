@@ -50,9 +50,9 @@ def get_index_data(soup):
     return urls
 
 def write_csv(data,id):
-    with open('C:/Users/Mat/Desktop/Ejemplo_CRUD_MySQL_VBNET/productos/data/output.csv', 'a') as csvfile:
+    with open('../data/output.csv', 'a') as csvfile:
         #writer = csv.writer(csvfile, delimiter='|')
-        writer = csv.writer(csvfile)
+        writer = csv.writer(csvfile, delimiter='|')
         row = [id, data['titulo'], data['precio'], data['cantidad'], data['img']]
         print(row)
         writer.writerow(row)

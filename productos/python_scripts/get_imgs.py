@@ -3,7 +3,7 @@ import sys
 
 import csv
 
-with open('C:/Users/Mat/Desktop/Ejemplo_CRUD_MySQL_VBNET/productos/data/output.csv', newline='') as f:
+with open('../data/output.csv', newline='') as f:
     reader = csv.reader(f)
     data = list(reader)
 
