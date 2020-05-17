@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 import random 
-
+import os.path
 
 def get_page(url):
     response = requests.get(url)
@@ -21,7 +21,7 @@ def get_detail_data(soup):
     # ESTO DEPENDE DE LA ESTRUCTURA DE LA PÁGINA Y DE LOS DISTINTOS ARTÍCULOS.
 
     try:
-        title = soup.find('h1', id='itemTitle').find('a').get('data-mtdes')
+        title = soup.find('h1', id='itemTitle').find('a').get('data-mtdes').replace('"', '')
     except:
         return
     try:
@@ -50,9 +50,9 @@ def get_index_data(soup):
     return urls
 
 def write_csv(data,id):
-    with open('../data/output.csv', 'a') as csvfile:
+    with open("productos/data/output.csv", 'a', newline='') as outfile:
         #writer = csv.writer(csvfile, delimiter='|')
-        writer = csv.writer(csvfile, delimiter='|')
+        writer = csv.writer(outfile, delimiter='|')
         row = [id, data['titulo'], data['precio'], data['cantidad'], data['img']]
         print(row)
         writer.writerow(row)
