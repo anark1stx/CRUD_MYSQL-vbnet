@@ -33,13 +33,26 @@ def get_detail_data(soup):
     except:
         return
     #print('Producto: ' + title + ' Precio: ' + price + ' image URL: ' + img)
-    data = {
+    precio = num(prc)
+    #bc we don't want any thrash lol
+    if (precio<100.00):
+        return
+    else:
+        data = {
         'titulo': title,
-        'precio': prc,
+        'precio': precio,
         'cantidad': random.randrange(20,100),
         'img': img
     }
     return data
+    
+def num(s):
+    try:
+        return int(s)
+    except ValueError:
+        return float(s)
+
+
 
 def get_index_data(soup):
     try:
@@ -58,8 +71,8 @@ def write_csv(data,id):
         writer.writerow(row)
         
 def main():
-    id=0
-    url ='https://www.ebay.com/sch/i.html?_nkw=laptop&rt=nc&LH_PrefLoc=3'
+    id=14
+    url ='https://www.ebay.com/sch/i.html?_nkw=laptop&rt=nc&LH_PrefLoc=3&_pgn=2' #CHANGE NKW=LAPTOP TO WHATEVER YOU WANT TO SEARCH + PGN=2 TO THE PAGE NUMBER YOU WANT TO LOOK IN.
     #get_detail_data(get_page(url))
     products = get_index_data(get_page(url))
     for link in products:
