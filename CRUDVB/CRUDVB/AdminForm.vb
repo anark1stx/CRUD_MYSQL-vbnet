@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class AdminForm
 
     Dim selectedRow As String 'Variable para guardar la row seleccionada'
     Dim modoEdicion As Boolean = 0 'Variable para saber si cuando demos en guardar la sentencia va a ser insert o update.'
@@ -153,5 +153,6 @@
             Return
         End Try
     End Sub
+
 
 End Class

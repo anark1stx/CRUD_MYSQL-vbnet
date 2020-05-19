@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class AdminForm
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -68,7 +68,7 @@ Partial Class Form1
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ControlText
         Me.GroupBox2.Location = New System.Drawing.Point(15, 236)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(676, 265)
+        Me.GroupBox2.Size = New System.Drawing.Size(806, 265)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Buscar, actualizar y eliminar productos"
@@ -100,7 +100,7 @@ Partial Class Form1
         '
         Me.btnBuscar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnBuscar.Image = Global.CRUDVB.My.Resources.Resources.zoom
-        Me.btnBuscar.Location = New System.Drawing.Point(386, 15)
+        Me.btnBuscar.Location = New System.Drawing.Point(516, 15)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(29, 26)
         Me.btnBuscar.TabIndex = 20
@@ -110,7 +110,7 @@ Partial Class Form1
         '
         Me.pboxProducto_seleccionado.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pboxProducto_seleccionado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pboxProducto_seleccionado.Location = New System.Drawing.Point(421, 64)
+        Me.pboxProducto_seleccionado.Location = New System.Drawing.Point(551, 64)
         Me.pboxProducto_seleccionado.Name = "pboxProducto_seleccionado"
         Me.pboxProducto_seleccionado.Size = New System.Drawing.Size(246, 195)
         Me.pboxProducto_seleccionado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -130,7 +130,7 @@ Partial Class Form1
         Me.dgvProductos.Name = "dgvProductos"
         Me.dgvProductos.ReadOnly = True
         Me.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvProductos.Size = New System.Drawing.Size(408, 195)
+        Me.dgvProductos.Size = New System.Drawing.Size(538, 195)
         Me.dgvProductos.TabIndex = 19
         '
         'txtBuscar
@@ -141,7 +141,7 @@ Partial Class Form1
         Me.txtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBuscar.Location = New System.Drawing.Point(238, 19)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(142, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(272, 20)
         Me.txtBuscar.TabIndex = 13
         '
         'btnRefrescar
@@ -201,7 +201,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.pboxProducto_Subir)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(676, 208)
+        Me.GroupBox1.Size = New System.Drawing.Size(806, 208)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Añadir y editar productos"
@@ -212,7 +212,7 @@ Partial Class Form1
         Me.btnLimpiarTodo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLimpiarTodo.Image = Global.CRUDVB.My.Resources.Resources.limpiar
         Me.btnLimpiarTodo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLimpiarTodo.Location = New System.Drawing.Point(318, 170)
+        Me.btnLimpiarTodo.Location = New System.Drawing.Point(448, 170)
         Me.btnLimpiarTodo.Name = "btnLimpiarTodo"
         Me.btnLimpiarTodo.Size = New System.Drawing.Size(100, 23)
         Me.btnLimpiarTodo.TabIndex = 12
@@ -240,7 +240,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtCantidad.Location = New System.Drawing.Point(56, 94)
         Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(362, 20)
+        Me.txtCantidad.Size = New System.Drawing.Size(492, 20)
         Me.txtCantidad.TabIndex = 9
         '
         'Label4
@@ -262,7 +262,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtPrecio.Location = New System.Drawing.Point(56, 68)
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(362, 20)
+        Me.txtPrecio.Size = New System.Drawing.Size(492, 20)
         Me.txtPrecio.TabIndex = 7
         '
         'Label3
@@ -285,7 +285,7 @@ Partial Class Form1
         Me.txtID.Enabled = False
         Me.txtID.Location = New System.Drawing.Point(56, 42)
         Me.txtID.Name = "txtID"
-        Me.txtID.Size = New System.Drawing.Size(362, 20)
+        Me.txtID.Size = New System.Drawing.Size(492, 20)
         Me.txtID.TabIndex = 5
         '
         'Label2
@@ -307,7 +307,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtNombre.Location = New System.Drawing.Point(56, 16)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(362, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(492, 20)
         Me.txtNombre.TabIndex = 3
         '
         'Label1
@@ -325,25 +325,26 @@ Partial Class Form1
         'pboxProducto_Subir
         '
         Me.pboxProducto_Subir.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pboxProducto_Subir.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.pboxProducto_Subir.BackgroundImage = Global.CRUDVB.My.Resources.Resources.interfaz__1_
         Me.pboxProducto_Subir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.pboxProducto_Subir.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pboxProducto_Subir.Location = New System.Drawing.Point(496, 19)
+        Me.pboxProducto_Subir.Location = New System.Drawing.Point(626, 19)
         Me.pboxProducto_Subir.Name = "pboxProducto_Subir"
         Me.pboxProducto_Subir.Size = New System.Drawing.Size(174, 174)
         Me.pboxProducto_Subir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pboxProducto_Subir.TabIndex = 1
         Me.pboxProducto_Subir.TabStop = False
         '
-        'Form1
+        'AdminForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(247, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(700, 513)
+        Me.ClientSize = New System.Drawing.Size(830, 513)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Name = "Form1"
+        Me.Name = "AdminForm"
         Me.Text = "Webstore Admin"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()

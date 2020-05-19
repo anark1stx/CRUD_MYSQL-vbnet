@@ -1,4 +1,5 @@
-﻿Imports System.IO
+﻿Imports System.Configuration
+Imports System.IO
 Imports MySql.Data
 Module mdMYSQL 'Con este modulo manejamos todo lo que tiene que ver con SQL'
     Dim conn As New MySqlClient.MySqlConnection
@@ -21,11 +22,7 @@ Module mdMYSQL 'Con este modulo manejamos todo lo que tiene que ver con SQL'
 
     'Retornamos los datos de la conexión como String'
     Public Function CONNECTION_STRING() As String
-        Dim myConnectionString As String
-        myConnectionString = "server=127.0.0.1;" _
-            & "uid=mateo;" _
-            & "pwd=123;" _
-            & "database=item_db"
+        Dim myConnectionString As String = ConfigurationManager.ConnectionStrings("MySqlConnectionString").ToString() 'Connection string está encriptado en App.config :) https://stackoverflow.com/questions/11637348/encrypt-connection-string-in-app-config
         Return myConnectionString
     End Function
 
