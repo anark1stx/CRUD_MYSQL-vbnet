@@ -45,7 +45,6 @@ C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Runtime.Com
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\MySql.Data.xml
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.vbprojAssemblyReference.cache
-C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.exe.config
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.Resources.resources
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.vbproj.GenerateResource.cache
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.vbproj.CoreCompileInputs.cache
@@ -56,3 +55,10 @@ C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.pdb
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\Guna.UI.dll
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.AdminForm.resources
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.LoginFrom.resources
+C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Buffers.xml
+C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Memory.xml
+C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.frmLogin.resources

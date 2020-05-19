@@ -48,16 +48,32 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.0.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.0\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\..\..\vbnet frameworks\Guna.UI-Framework-Lib-master\Guna.UI_WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -79,13 +95,20 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlInteraccion_BD.vb" />
     <Compile Include="LoginFrom.Designer.vb">
       <DependentUpon>LoginFrom.vb</DependentUpon>
     </Compile>
     <Compile Include="LoginFrom.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mdMYSQL.vb" />
+    <Compile Include="mdlConexion.vb" />
     <Compile Include="AdminForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +137,9 @@
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginFrom.resx">
       <DependentUpon>LoginFrom.vb</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +163,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\borrar.png" />
   </ItemGroup>
   <ItemGroup>
