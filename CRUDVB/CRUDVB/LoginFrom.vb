@@ -29,10 +29,6 @@
         Dim correo As String = txtCrearCorreo.Text
         Dim usr As String = txtCrearUsr.Text
         Dim pwd As String = txtCrearContrasena.Text
-        Console.WriteLine(NomYAp)
-        Console.WriteLine(correo)
-        Console.WriteLine(usr)
-        Console.WriteLine(pwd)
         Registrar_usr(usr, correo, pwd, NomYAp)
     End Sub
 End Class

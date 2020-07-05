@@ -61,4 +61,4 @@ C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Buffers.xml
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Memory.xml
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.frmLogin.resources
+C:\Users\Mat\Desktop\CRUD_MYSQL-vbnet\CRUDVB\CRUDVB\obj\Debug\CRUDVB.exe.config

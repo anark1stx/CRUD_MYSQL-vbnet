@@ -5,6 +5,7 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Llenar la tabla con todos los datos que tenemos en la BD:'
         dgvProductos.DataSource = Hacer_Consulta("SELECT ID, Nombre, Precio, Cantidad FROM item_table")
+
     End Sub
 
     Private Sub cerrar_ventana(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.Closing
@@ -85,7 +86,7 @@
         txtNombre.Text = ""
         txtPrecio.Text = ""
         txtCantidad.Text = ""
-        pboxProducto_Subir.ImageLocation = Nothing
+        pboxProducto_Subir.Image = Nothing
         modoEdicion = 0
     End Sub
 

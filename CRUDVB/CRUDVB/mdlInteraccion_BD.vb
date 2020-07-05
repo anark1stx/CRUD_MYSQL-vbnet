@@ -107,7 +107,6 @@ Module mdlInteraccion_BD
         Cerrar()
     End Sub
 
-
     Public Function Ingresar(usr As String, pwd As String) As Boolean
         Conectar(CONNECTION_STRING())
         Dim ok As Boolean = False
@@ -122,8 +121,10 @@ Module mdlInteraccion_BD
             If r = 0 Then
                 Console.WriteLine("usr no existe!!")
                 Cerrar()
+                ok = False
                 Return False
             Else
+                Console.WriteLine(.CommandText)
                 Console.WriteLine("usr existe!!")
                 ok = True
             End If
@@ -142,6 +143,7 @@ Module mdlInteraccion_BD
                 Dim sqlReader As MySqlDataReader = cmd.ExecuteReader()
                 While sqlReader.Read()
                     hash = sqlReader("contrasena").ToString()
+                    Console.WriteLine("la contrasena es: " + hash)
                 End While
 
                 Dim okpwd As Boolean = BCrypt.Net.BCrypt.Verify(pwd, hash) 'Este método verifica la contraseña ingresada con el hash desencriptado automáticamente.

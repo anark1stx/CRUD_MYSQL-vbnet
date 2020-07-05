@@ -23,7 +23,7 @@ Partial Class LoginFrom
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation5 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
+        Dim Animation1 As Guna.UI.Animation.Animation = New Guna.UI.Animation.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginFrom))
         Me.pnlLogin = New Guna.UI.WinForms.GunaPanel()
         Me.btnRegistrarses = New Guna.UI.WinForms.GunaButton()
@@ -36,6 +36,11 @@ Partial Class LoginFrom
         Me.GunaLabel1 = New Guna.UI.WinForms.GunaLabel()
         Me.lblnombre = New Guna.UI.WinForms.GunaLabel()
         Me.pnlRegistrar = New Guna.UI.WinForms.GunaPanel()
+        Me.btnRegistrarme = New Guna.UI.WinForms.GunaGradientButton()
+        Me.txtCrearContrasena = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtCrearCorreo = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtCrearUsr = New Guna.UI.WinForms.GunaTextBox()
+        Me.txtNomAp = New Guna.UI.WinForms.GunaTextBox()
         Me.GunaLabel9 = New Guna.UI.WinForms.GunaLabel()
         Me.GunaLabel8 = New Guna.UI.WinForms.GunaLabel()
         Me.btnLogin = New Guna.UI.WinForms.GunaButton()
@@ -46,11 +51,6 @@ Partial Class LoginFrom
         Me.trsLogintoRegister = New Guna.UI.WinForms.GunaTransition(Me.components)
         Me.dragLogin = New Guna.UI.WinForms.GunaDragControl(Me.components)
         Me.dragRegister = New Guna.UI.WinForms.GunaDragControl(Me.components)
-        Me.txtNomAp = New Guna.UI.WinForms.GunaTextBox()
-        Me.txtCrearUsr = New Guna.UI.WinForms.GunaTextBox()
-        Me.txtCrearCorreo = New Guna.UI.WinForms.GunaTextBox()
-        Me.txtCrearContrasena = New Guna.UI.WinForms.GunaTextBox()
-        Me.btnRegistrarme = New Guna.UI.WinForms.GunaGradientButton()
         Me.pnlLogin.SuspendLayout()
         Me.pnlRegistrar.SuspendLayout()
         Me.SuspendLayout()
@@ -155,7 +155,7 @@ Partial Class LoginFrom
         Me.txtPwd.ForeColor = System.Drawing.Color.White
         Me.txtPwd.Location = New System.Drawing.Point(296, 250)
         Me.txtPwd.Name = "txtPwd"
-        Me.txtPwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPwd.SelectedText = ""
         Me.txtPwd.Size = New System.Drawing.Size(247, 37)
         Me.txtPwd.TabIndex = 5
@@ -247,6 +247,111 @@ Partial Class LoginFrom
         Me.pnlRegistrar.Name = "pnlRegistrar"
         Me.pnlRegistrar.Size = New System.Drawing.Size(846, 529)
         Me.pnlRegistrar.TabIndex = 1
+        '
+        'btnRegistrarme
+        '
+        Me.btnRegistrarme.AnimationHoverSpeed = 0.07!
+        Me.btnRegistrarme.AnimationSpeed = 0.03!
+        Me.btnRegistrarme.BackColor = System.Drawing.Color.Transparent
+        Me.btnRegistrarme.BaseColor1 = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.btnRegistrarme.BaseColor2 = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.btnRegistrarme.BorderColor = System.Drawing.Color.Black
+        Me.trsLogintoRegister.SetDecoration(Me.btnRegistrarme, Guna.UI.Animation.DecorationType.None)
+        Me.btnRegistrarme.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btnRegistrarme.FocusedColor = System.Drawing.Color.Empty
+        Me.btnRegistrarme.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.btnRegistrarme.ForeColor = System.Drawing.Color.White
+        Me.btnRegistrarme.Image = Nothing
+        Me.btnRegistrarme.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btnRegistrarme.Location = New System.Drawing.Point(296, 461)
+        Me.btnRegistrarme.Name = "btnRegistrarme"
+        Me.btnRegistrarme.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(145, Byte), Integer), CType(CType(221, Byte), Integer))
+        Me.btnRegistrarme.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnRegistrarme.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btnRegistrarme.OnHoverForeColor = System.Drawing.Color.White
+        Me.btnRegistrarme.OnHoverImage = Nothing
+        Me.btnRegistrarme.OnPressedColor = System.Drawing.Color.Black
+        Me.btnRegistrarme.Radius = 2
+        Me.btnRegistrarme.Size = New System.Drawing.Size(247, 42)
+        Me.btnRegistrarme.TabIndex = 25
+        Me.btnRegistrarme.Text = "Registrarme"
+        Me.btnRegistrarme.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtCrearContrasena
+        '
+        Me.txtCrearContrasena.BaseColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.txtCrearContrasena.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.txtCrearContrasena.BorderSize = 1
+        Me.txtCrearContrasena.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.trsLogintoRegister.SetDecoration(Me.txtCrearContrasena, Guna.UI.Animation.DecorationType.None)
+        Me.txtCrearContrasena.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(176, Byte), Integer))
+        Me.txtCrearContrasena.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtCrearContrasena.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtCrearContrasena.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtCrearContrasena.ForeColor = System.Drawing.Color.White
+        Me.txtCrearContrasena.Location = New System.Drawing.Point(296, 404)
+        Me.txtCrearContrasena.Name = "txtCrearContrasena"
+        Me.txtCrearContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCrearContrasena.SelectedText = ""
+        Me.txtCrearContrasena.Size = New System.Drawing.Size(247, 37)
+        Me.txtCrearContrasena.TabIndex = 24
+        '
+        'txtCrearCorreo
+        '
+        Me.txtCrearCorreo.BaseColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.txtCrearCorreo.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.txtCrearCorreo.BorderSize = 1
+        Me.txtCrearCorreo.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.trsLogintoRegister.SetDecoration(Me.txtCrearCorreo, Guna.UI.Animation.DecorationType.None)
+        Me.txtCrearCorreo.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(176, Byte), Integer))
+        Me.txtCrearCorreo.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtCrearCorreo.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtCrearCorreo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtCrearCorreo.ForeColor = System.Drawing.Color.White
+        Me.txtCrearCorreo.Location = New System.Drawing.Point(296, 327)
+        Me.txtCrearCorreo.Name = "txtCrearCorreo"
+        Me.txtCrearCorreo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCrearCorreo.SelectedText = ""
+        Me.txtCrearCorreo.Size = New System.Drawing.Size(247, 37)
+        Me.txtCrearCorreo.TabIndex = 23
+        '
+        'txtCrearUsr
+        '
+        Me.txtCrearUsr.BaseColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.txtCrearUsr.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.txtCrearUsr.BorderSize = 1
+        Me.txtCrearUsr.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.trsLogintoRegister.SetDecoration(Me.txtCrearUsr, Guna.UI.Animation.DecorationType.None)
+        Me.txtCrearUsr.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(176, Byte), Integer))
+        Me.txtCrearUsr.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtCrearUsr.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtCrearUsr.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtCrearUsr.ForeColor = System.Drawing.Color.White
+        Me.txtCrearUsr.Location = New System.Drawing.Point(296, 250)
+        Me.txtCrearUsr.Name = "txtCrearUsr"
+        Me.txtCrearUsr.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCrearUsr.SelectedText = ""
+        Me.txtCrearUsr.Size = New System.Drawing.Size(247, 37)
+        Me.txtCrearUsr.TabIndex = 22
+        '
+        'txtNomAp
+        '
+        Me.txtNomAp.BaseColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.txtNomAp.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(93, Byte), Integer))
+        Me.txtNomAp.BorderSize = 1
+        Me.txtNomAp.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.trsLogintoRegister.SetDecoration(Me.txtNomAp, Guna.UI.Animation.DecorationType.None)
+        Me.txtNomAp.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(176, Byte), Integer))
+        Me.txtNomAp.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtNomAp.FocusedForeColor = System.Drawing.SystemColors.ControlText
+        Me.txtNomAp.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtNomAp.ForeColor = System.Drawing.Color.White
+        Me.txtNomAp.Location = New System.Drawing.Point(296, 175)
+        Me.txtNomAp.Name = "txtNomAp"
+        Me.txtNomAp.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtNomAp.SelectedText = ""
+        Me.txtNomAp.Size = New System.Drawing.Size(247, 37)
+        Me.txtNomAp.TabIndex = 21
         '
         'GunaLabel9
         '
@@ -349,22 +454,22 @@ Partial Class LoginFrom
         '
         Me.trsLogintoRegister.AnimationType = Guna.UI.Animation.AnimationType.Transparent
         Me.trsLogintoRegister.Cursor = Nothing
-        Animation5.AnimateOnlyDifferences = True
-        Animation5.BlindCoeff = CType(resources.GetObject("Animation5.BlindCoeff"), System.Drawing.PointF)
-        Animation5.LeafCoeff = 0!
-        Animation5.MaxTime = 1.0!
-        Animation5.MinTime = 0!
-        Animation5.MosaicCoeff = CType(resources.GetObject("Animation5.MosaicCoeff"), System.Drawing.PointF)
-        Animation5.MosaicShift = CType(resources.GetObject("Animation5.MosaicShift"), System.Drawing.PointF)
-        Animation5.MosaicSize = 0
-        Animation5.Padding = New System.Windows.Forms.Padding(0)
-        Animation5.RotateCoeff = 0!
-        Animation5.RotateLimit = 0!
-        Animation5.ScaleCoeff = CType(resources.GetObject("Animation5.ScaleCoeff"), System.Drawing.PointF)
-        Animation5.SlideCoeff = CType(resources.GetObject("Animation5.SlideCoeff"), System.Drawing.PointF)
-        Animation5.TimeCoeff = 0!
-        Animation5.TransparencyCoeff = 1.0!
-        Me.trsLogintoRegister.DefaultAnimation = Animation5
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 1.0!
+        Me.trsLogintoRegister.DefaultAnimation = Animation1
         Me.trsLogintoRegister.MaxAnimationTime = 200
         '
         'dragLogin
@@ -374,111 +479,6 @@ Partial Class LoginFrom
         'dragRegister
         '
         Me.dragRegister.TargetControl = Me.pnlRegistrar
-        '
-        'txtNomAp
-        '
-        Me.txtNomAp.BaseColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.txtNomAp.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.txtNomAp.BorderSize = 1
-        Me.txtNomAp.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.trsLogintoRegister.SetDecoration(Me.txtNomAp, Guna.UI.Animation.DecorationType.None)
-        Me.txtNomAp.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(176, Byte), Integer))
-        Me.txtNomAp.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtNomAp.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtNomAp.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtNomAp.ForeColor = System.Drawing.Color.White
-        Me.txtNomAp.Location = New System.Drawing.Point(296, 175)
-        Me.txtNomAp.Name = "txtNomAp"
-        Me.txtNomAp.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtNomAp.SelectedText = ""
-        Me.txtNomAp.Size = New System.Drawing.Size(247, 37)
-        Me.txtNomAp.TabIndex = 21
-        '
-        'txtCrearUsr
-        '
-        Me.txtCrearUsr.BaseColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.txtCrearUsr.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.txtCrearUsr.BorderSize = 1
-        Me.txtCrearUsr.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.trsLogintoRegister.SetDecoration(Me.txtCrearUsr, Guna.UI.Animation.DecorationType.None)
-        Me.txtCrearUsr.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(176, Byte), Integer))
-        Me.txtCrearUsr.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCrearUsr.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtCrearUsr.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtCrearUsr.ForeColor = System.Drawing.Color.White
-        Me.txtCrearUsr.Location = New System.Drawing.Point(296, 250)
-        Me.txtCrearUsr.Name = "txtCrearUsr"
-        Me.txtCrearUsr.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtCrearUsr.SelectedText = ""
-        Me.txtCrearUsr.Size = New System.Drawing.Size(247, 37)
-        Me.txtCrearUsr.TabIndex = 22
-        '
-        'txtCrearCorreo
-        '
-        Me.txtCrearCorreo.BaseColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.txtCrearCorreo.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.txtCrearCorreo.BorderSize = 1
-        Me.txtCrearCorreo.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.trsLogintoRegister.SetDecoration(Me.txtCrearCorreo, Guna.UI.Animation.DecorationType.None)
-        Me.txtCrearCorreo.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(176, Byte), Integer))
-        Me.txtCrearCorreo.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCrearCorreo.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtCrearCorreo.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtCrearCorreo.ForeColor = System.Drawing.Color.White
-        Me.txtCrearCorreo.Location = New System.Drawing.Point(296, 327)
-        Me.txtCrearCorreo.Name = "txtCrearCorreo"
-        Me.txtCrearCorreo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtCrearCorreo.SelectedText = ""
-        Me.txtCrearCorreo.Size = New System.Drawing.Size(247, 37)
-        Me.txtCrearCorreo.TabIndex = 23
-        '
-        'txtCrearContrasena
-        '
-        Me.txtCrearContrasena.BaseColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.txtCrearContrasena.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(93, Byte), Integer))
-        Me.txtCrearContrasena.BorderSize = 1
-        Me.txtCrearContrasena.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.trsLogintoRegister.SetDecoration(Me.txtCrearContrasena, Guna.UI.Animation.DecorationType.None)
-        Me.txtCrearContrasena.FocusedBaseColor = System.Drawing.Color.FromArgb(CType(CType(111, Byte), Integer), CType(CType(123, Byte), Integer), CType(CType(176, Byte), Integer))
-        Me.txtCrearContrasena.FocusedBorderColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txtCrearContrasena.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.txtCrearContrasena.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.txtCrearContrasena.ForeColor = System.Drawing.Color.White
-        Me.txtCrearContrasena.Location = New System.Drawing.Point(296, 404)
-        Me.txtCrearContrasena.Name = "txtCrearContrasena"
-        Me.txtCrearContrasena.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtCrearContrasena.SelectedText = ""
-        Me.txtCrearContrasena.Size = New System.Drawing.Size(247, 37)
-        Me.txtCrearContrasena.TabIndex = 24
-        '
-        'btnRegistrarme
-        '
-        Me.btnRegistrarme.AnimationHoverSpeed = 0.07!
-        Me.btnRegistrarme.AnimationSpeed = 0.03!
-        Me.btnRegistrarme.BackColor = System.Drawing.Color.Transparent
-        Me.btnRegistrarme.BaseColor1 = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(185, Byte), Integer))
-        Me.btnRegistrarme.BaseColor2 = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.btnRegistrarme.BorderColor = System.Drawing.Color.Black
-        Me.trsLogintoRegister.SetDecoration(Me.btnRegistrarme, Guna.UI.Animation.DecorationType.None)
-        Me.btnRegistrarme.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btnRegistrarme.FocusedColor = System.Drawing.Color.Empty
-        Me.btnRegistrarme.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.btnRegistrarme.ForeColor = System.Drawing.Color.White
-        Me.btnRegistrarme.Image = Nothing
-        Me.btnRegistrarme.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btnRegistrarme.Location = New System.Drawing.Point(296, 461)
-        Me.btnRegistrarme.Name = "btnRegistrarme"
-        Me.btnRegistrarme.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(145, Byte), Integer), CType(CType(221, Byte), Integer))
-        Me.btnRegistrarme.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnRegistrarme.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.btnRegistrarme.OnHoverForeColor = System.Drawing.Color.White
-        Me.btnRegistrarme.OnHoverImage = Nothing
-        Me.btnRegistrarme.OnPressedColor = System.Drawing.Color.Black
-        Me.btnRegistrarme.Radius = 2
-        Me.btnRegistrarme.Size = New System.Drawing.Size(247, 42)
-        Me.btnRegistrarme.TabIndex = 25
-        Me.btnRegistrarme.Text = "Registrarme"
-        Me.btnRegistrarme.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'LoginFrom
         '

@@ -9,7 +9,7 @@ Module mdlConexion 'Con este modulo manejamos todo lo que tiene que ver con SQL'
         Try
             conn.ConnectionString = connection_string
             conn.Open()
-            'MsgBox("Base de datos: " + conn.Database) <<--- MOSTRAR LA BD QUE ESTAMOS USANDO
+            'MsgBox("Base de datos: " + conn.Database) '<<--- MOSTRAR LA BD QUE ESTAMOS USANDO
         Catch ex As MySqlClient.MySqlException
             MessageBox.Show(ex.Message)
         End Try
@@ -22,7 +22,9 @@ Module mdlConexion 'Con este modulo manejamos todo lo que tiene que ver con SQL'
 
     'Retornamos los datos de la conexión como String'
     Public Function CONNECTION_STRING() As String
-        Dim myConnectionString As String = ConfigurationManager.ConnectionStrings("MySqlConnectionString").ToString() 'Connection string está encriptado en App.config :) https://stackoverflow.com/questions/11637348/encrypt-connection-string-in-app-config
+        'Dim myConnectionString As String = ConfigurationManager.ConnectionStrings("connstr").ToString() 'Connection string está encriptado en App.config :) https://stackoverflow.com/questions/11637348/encrypt-connection-string-in-app-config
+        Dim myConnectionString As String = ConfigurationManager.ConnectionStrings("connstr").ConnectionString 'Connection string está encriptado en App.config :) https://stackoverflow.com/questions/11637348/encrypt-connection-string-in-app-config
+        'Console.WriteLine(myConnectionString)
         Return myConnectionString
     End Function
 
