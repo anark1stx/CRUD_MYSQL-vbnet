@@ -1,6 +1,0 @@
-CREATE TABLE `item_db`.`item_table` (    `ID` INT(10) NOT NULL , 
-				         `Name` VARCHAR(100) NOT NULL ,
-					 `Price` DECIMAL(8,2) NOT NULL ,
- 					 `Ammount` INT(10) NOT NULL ,
-					 `Images` LONGBLOB NOT NULL ,
-					 PRIMARY KEY (`ID`)) ENGINE = InnoDB;
