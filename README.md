@@ -8,3 +8,8 @@ This project contains everything from VB.NET desgin, modules and Functions to pr
         Posteriormente, dentro de 'CRUDVB/CRUDVB/App.config', cambiar el connectionString con tu usuario y contraseña de base de datos.
         
         "<add name="connstr" connectionString="server=localhost;user=AQUI_TU_USUARIO;database=item_db;port=3306;password=AQUI_TU_CONTRASEÑA;" />"
+
+
+# DEMO
+
+https://www.youtube.com/watch?v=fyOTgxY4smo&t
